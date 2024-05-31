@@ -116,4 +116,4 @@ The program will automatically open two windows to obtain a depth image and an R
 
 
 
-At the same time, `touch.py` also serves as a good example on which you can develop your own automated scraping program.
+At the same time, `touch.py` also serves as a good example on which you can develop your own AI automated grasping program.

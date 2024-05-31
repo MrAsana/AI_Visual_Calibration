@@ -2,6 +2,16 @@
 
 We will go through three steps to get the relative position of the robot arm base and camera. 
 
+## Install Requirement
+
+```bash
+pip install pyrealsense2
+pip install pin-pink
+pip install opencv-python
+pip install numpy scipy matplotlib
+bash install-realsense.sh
+```
+
 ## Hardware installation
 
 - Install the calibration plate to the top of the robotic arm through the quick release interface.
@@ -14,6 +24,8 @@ We will go through three steps to get the relative position of the robot arm bas
 ![calibrate-V-mount.43](Calibrate_Readme.assets/calibrate-V-mount.43.png)
 
 ![calibrate-V-mount.44](Calibrate_Readme.assets/calibrate-V-mount.44.png)
+
+
 
 ## Calculate calibration points
 
@@ -99,3 +111,9 @@ python touch.py
 ```
 
 The program will automatically open two windows to obtain a depth image and an RGB image from the camera. The window showing the RGB image can be clicked. When you click on the checkerboard (a random point on checkboard) in the **RGB window**, the program will control the robot arm to move, trying to **align the center** of the checkerboard to the click point. Based on the above test process, we can verify the accuracy of the calibration.
+
+
+
+
+
+At the same time, `touch.py` also serves as a good example on which you can develop your own automated scraping program.
